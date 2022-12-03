@@ -9,13 +9,21 @@ export default class Team {
 
   * iterator() {
     let index = 0;
-    // let lastIndex;
     const enemies = [...this.enemies];
     while (index < enemies.length) {
       yield enemies[index];
       index += 1;
     }
   }
+
+  // * [Symbol.iterator]() {
+  //   let index = 0;
+  //   const enemies = [...this.enemies];
+  //   while (index < enemies.length) {
+  //     yield enemies[index];
+  //     index += 1;
+  //   }
+  // }
 
   getOneEnemy(iter) {
     console.log(iter.next().value);
