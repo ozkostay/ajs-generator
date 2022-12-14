@@ -11,8 +11,6 @@ team.add(bowman);
 team.add(mag);
 team.add(swordsmane);
 
-const iterator = team.iterator();
-team.getOneEnemy(iterator);
-team.getOneEnemy(iterator);
-team.getOneEnemy(iterator);
-team.getOneEnemy(iterator);
+console.log(team.getOneEnemy());
+console.log(team.getOneEnemy());
+console.log(team.getOneEnemy());
